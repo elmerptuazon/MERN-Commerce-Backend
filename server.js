@@ -36,7 +36,7 @@ shopRoutes.route("/edit/profile").post(function(req, res) {
       res.status(200).json({ shop: "item has been added" });
     })
     .catch(err => {
-      res.status(400).send * "shop item failed";
+      res.status(400).send("shop item failed");
     });
 });
 

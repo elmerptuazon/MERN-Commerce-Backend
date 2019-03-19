@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 let Shop = new Schema({
   shop_file: {
-    type: Object
+    data: Buffer,
+    type: String
   },
   shop_title: {
     type: String
