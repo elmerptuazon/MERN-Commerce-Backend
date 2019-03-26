@@ -1,19 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const ShopDetails = require("./shopdetails.model").model("ShopDetails");
 
 let Shop = new Schema({
-  shop_file: {
-    data: Buffer,
+  shop_username: {
     type: String
   },
-  shop_title: {
+  shop_password: {
     type: String
-  },
-  shop_price: {
-    type: String
-  },
-  shop_completed: {
-    type: Boolean
   }
 });
 
